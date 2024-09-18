@@ -99,6 +99,8 @@ body {
   font-family: var(--ff-base);
   background-color: var(--clr-primary-300);
   position: relative;
+  display: grid;
+  place-content: center;
 }
 body::after {
   position: absolute;
@@ -110,6 +112,9 @@ body::after {
   right: 0;
   z-index: -100;
 }
+h1 {
+  font-size: 3rem;
+}
 /* ======================================= */
 /* ==========|| Header Style ||=========== */
 /* ======================================= */
@@ -117,6 +122,19 @@ body::after {
 /* ======================================= */
 /* ===========|| Main Style ||============ */
 /* ======================================= */
+.faq-section {
+  background-color: var(--clr-neutral-100);
+  border-radius: 1em;
+  padding: var(--spacing-400);
+}
+.faq-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-300);
+}
+.faq-header::before {
+  content: url(assets/images/icon-star.svg);
+}
 
 /* =============|| Buttons ||============= */
 
