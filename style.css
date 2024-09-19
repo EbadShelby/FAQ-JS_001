@@ -118,6 +118,14 @@ h1 {
 /* ======================================= */
 /* ==========|| Header Style ||=========== */
 /* ======================================= */
+.faq-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-300);
+}
+.faq-header::before {
+  content: url(assets/images/icon-star.svg);
+}
 
 /* ======================================= */
 /* ===========|| Main Style ||============ */
@@ -127,13 +135,22 @@ h1 {
   border-radius: 1em;
   padding: var(--spacing-400);
 }
-.faq-header {
+.faq-item {
   display: flex;
   align-items: center;
-  gap: var(--spacing-300);
+  justify-content: space-between;
+  gap: 2em;
+  padding-block: var(--spacing-200);
 }
-.faq-header::before {
-  content: url(assets/images/icon-star.svg);
+.faq-item:not(:first-child) {
+  border-top: 1px solid var(--clr-primary-300);
+}
+.faq-item::after {
+  content: url(assets/images/icon-plus.svg);
+}
+.faq-question {
+  font-weight: var(--fw-medium);
+  font-size: 1.125rem;
 }
 
 /* =============|| Buttons ||============= */
