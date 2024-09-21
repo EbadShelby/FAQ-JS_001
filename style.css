@@ -15,20 +15,20 @@
 
   --ff-base: "Work Sans", sans-serif;
 
-  --spacing-50: 4px;
-  --spacing-100: 8px;
-  --spacing-150: 12px;
-  --spacing-200: 16px;
-  --spacing-250: 20px;
-  --spacing-300: 24px;
-  --spacing-350: 28px;
-  --spacing-400: 32px;
-  --spacing-500: 40px;
-  --spacing-600: 48px;
-  --spacing-700: 60px;
-  --spacing-800: 100px;
-  --spacing-900: 160px;
-  --spacing-1000: 240px;
+  --spacing-50: 0.25rem;
+  --spacing-100: 0.5rem;
+  --spacing-150: 0.75rem;
+  --spacing-200: 1rem;
+  --spacing-250: 1.25rem;
+  --spacing-300: 1.5rem;
+  --spacing-350: 1.75rem;
+  --spacing-400: 2rem;
+  --spacing-500: 2.5rem;
+  --spacing-600: 3rem;
+  --spacing-700: 3.75rem;
+  --spacing-800: 6.25rem;
+  --spacing-900: 10rem;
+  --spacing-1000: 15rem;
 }
 /* ======================================= */
 /* ===============|| Reset ||============= */
@@ -113,7 +113,7 @@ body::after {
   z-index: -100;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 48px;
 }
 /* ======================================= */
 /* ==========|| Header Style ||=========== */
@@ -134,25 +134,30 @@ h1 {
   background-color: var(--clr-neutral-100);
   border-radius: 1em;
   padding: var(--spacing-400);
+  max-width: 37.5rem;
 }
 .faq-item {
   display: flex;
-  align-items: center;
+  align-items: top;
   justify-content: space-between;
   gap: 2em;
+  cursor: pointer;
   padding-block: var(--spacing-200);
 }
 .faq-item:not(:first-child) {
-  border-top: 1px solid var(--clr-primary-300);
+  border-top: 0.0625rem solid var(--clr-primary-300);
 }
 .faq-item::after {
   content: url(assets/images/icon-plus.svg);
 }
 .faq-question {
   font-weight: var(--fw-medium);
-  font-size: 1.125rem;
+  font-size: 18px;
 }
-
+.faq-answer {
+  margin-top: 1.5em;
+  color: var(--clr-secondary);
+}
 /* =============|| Buttons ||============= */
 
 /* =============|| Inputs ||============= */
@@ -170,4 +175,4 @@ h1 {
 /* ======================================= */
 
 /* button shadow  left-right/ down-up/ blur/ spread */
-/* box-shadow: inset 0px -2px 0px 1px rgba(0,0,0,0.4); */
+/* box-shadow: inset 0rem -0.125rem 0rem .0625rem rgba(0,0,0,0.4); */
