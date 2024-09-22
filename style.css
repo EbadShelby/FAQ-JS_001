@@ -140,8 +140,8 @@ h1 {
   display: flex;
   align-items: top;
   justify-content: space-between;
-  gap: 2em;
   cursor: pointer;
+  gap: 2em;
   padding-block: var(--spacing-200);
 }
 .faq-item:not(:first-child) {
@@ -157,6 +157,10 @@ h1 {
 .faq-answer {
   margin-top: 1.5em;
   color: var(--clr-secondary);
+  display: none;
+}
+.active .faq-answer{
+  display: block;
 }
 /* =============|| Buttons ||============= */
 
