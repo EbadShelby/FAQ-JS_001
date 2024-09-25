@@ -99,6 +99,8 @@ body {
   font-family: var(--ff-base);
   background-color: var(--clr-primary-300);
   position: relative;
+  display: grid;
+  place-content: center;
   
 }
 body::after {
